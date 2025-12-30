@@ -1,5 +1,9 @@
 # Forense de Filesystem em Servidor Local
 
+![Python](https://img.shields.io/badge/python-%2314354C.svg?style=flat&logo=python&logoColor=white)
+![DuckDB](https://img.shields.io/badge/duckdb-%230072CC.svg?style=flat&logo=duckdb&logoColor=white)
+
+
 Este repositório documenta um estudo técnico de **forense de dados em filesystem
 legado**, com foco em **diagnóstico, governança e redução de ruído**, sem qualquer
 ação destrutiva.
@@ -73,4 +77,15 @@ Nenhum arquivo foi apagado, movido ou executado.
 
 ---
 
+## Como usar
+
+1. Coloque a lista de arquivos `lista_arquivos.txt` no diretório raiz
+2. Rode `carga_duckdb.py`
+3. Use os scripts SQL em DuckDB para análise exploratória
+
+---
+
 Este repositório registra **processo e raciocínio técnico**, não um ambiente real.
+
+MIT License
+(c) 2025 Rafael Lintener Miranda
