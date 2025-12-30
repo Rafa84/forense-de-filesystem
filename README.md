@@ -45,6 +45,17 @@ A análise seguiu uma abordagem incremental e segura:
 
 Nenhum arquivo foi apagado, movido ou executado.
 
+```mermaid
+graph TD
+    A[Filesystem Legado<br/>340k Arquivos] -->|Scan Read-Only| B(Lista Plana .txt)
+    B -->|Ingestão| C{DuckDB}
+    C -->|SQL Analítico| D[Análise de Extensões]
+    C -->|Filtros Python| E[Scripts Relevantes]
+    D & E --> F[Relatório de Governança]
+    
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bbf,stroke:#333,stroke-width:2px
+```
 ---
 
 ## Escala analisada (ordem de grandeza)
